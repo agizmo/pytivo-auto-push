@@ -234,8 +234,9 @@ public class config {
          ofp.close();
          
       }         
-      catch (IOException ex) {
+      catch (Exception ex) {
          log.error("Problem writing to config file: " + configIni);
+         log.error(ex.toString());
          return false;
       }
       
@@ -304,8 +305,9 @@ public class config {
          // Check against shares in pyTivoConf if available
          pyTivoConfUpdate();
       }
-      catch (IOException ex) {
+      catch (Exception ex) {
          log.error("Problem parsing config file: " + configIni);
+         log.error(ex.toString());
          return false;
       }
       return true;
@@ -419,7 +421,7 @@ public class config {
          ofp.close();
          pushed.put(watchDir + File.separator + entry, "pushed");
       }
-      catch (IOException ex) {
+      catch (Exception ex) {
          log.error("Problem writing to file: " + fullTrackingFile);
          log.error(ex.toString());
          return false;
