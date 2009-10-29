@@ -23,7 +23,7 @@ public class config {
    public static String programDir = ".";
    public static String configIni = "config.ini";
    public static String logfile = "auto_push.log";
-   public static String trackingFile = ".processed";
+   public static String trackingFile = "auto_push.txt";
    public static String host = "localhost";
    public static String port = "9032";
    public static int wait = 20; // loop time in seconds to wait to check files again
