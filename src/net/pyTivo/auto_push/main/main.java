@@ -52,6 +52,7 @@ public class main {
          timer.start();
       } else {      
          // Batch mode infinite loop
+         log.print("STARTING UP");
          config.push = new auto_push(config.watchList);
          config.push.main_loop();
       }
