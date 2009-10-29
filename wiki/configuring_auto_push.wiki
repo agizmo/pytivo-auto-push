@@ -27,3 +27,7 @@
   * Say you have a file under that share that you do not want to push to your Tivo: *c:\myvideos\movies\adventure\IndianaJones.mpg*
   * You would edit/create *c:\myvideos\auto_push.txt* file and add the following line (remember that path has to be relative to location of the auto_push.txt file):
   {{{movies\adventure\IndianaJones.mpg}}}
+
+==RUNNING AUTO PUSH IN SERVICE/BACKGROUND NON-GRAPHICAL MODE==
+  * Once you have used the GUI to configure this program to your liking it is no longer necessary to run the program in graphical mode.
+  * Consult [http://code.google.com/p/pytivo-auto-push/wiki/service_mode service_mode] wiki entry for details on running this program as a service in windows or background job for Linux/Mac systems.
