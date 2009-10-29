@@ -14,7 +14,7 @@ import java.util.Stack;
 import net.pyTivo.auto_push.gui.gui;
 
 public class config {
-   public static String auto_push = "pyTivo auto push v0p1";
+   public static String auto_push = "pyTivo auto push v0.1a";
    public static Stack<Hashtable<String,String>> watchList = null;
    public static Hashtable<String,String> pushed = new Hashtable<String,String>();
    public static Stack<String> TIVOS = new Stack<String>();
