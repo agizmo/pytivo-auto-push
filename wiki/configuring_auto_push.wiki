@@ -23,6 +23,5 @@
 ===FOR EXAMPLE===
   * Say you have a pyTivo share with the top level path define as *c:\myvideos*
   * Say you have a file under that share that you do not want to push to your Tivo: *c:\myvideos\movies\adventure\IndianaJones.mpg*
-  * You would edit/create *c:\myvideos\auto_push.txt* file and add the following line:
+  * You would edit/create *c:\myvideos\auto_push.txt* file and add the following line (remember that path has to be relative to location of the auto_push.txt file):
   {{{movies\adventure\IndianaJones.mpg}}}
-  (remember that path has to be relative to location of the auto_push.txt file)
