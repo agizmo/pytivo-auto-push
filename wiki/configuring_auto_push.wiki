@@ -1,0 +1,28 @@
+=CONFIGURING AUTO PUSH=
+*This step is very important and must be run at least the first time you start auto push.*
+
+==PYTIVO SETUP==
+  * This program will only be able to push video files that are located under video shares you have defined in your pyTivo setup since it uses pyTivo to execute the push. Therefore you should make sure that there is a video share defined in pyTivo with a top level folder under which your videos will reside.
+  * For example, say that you want this program to automatically push video files that are dropped into a folder called *c:\myvideos*. In pyTivo setup you should define a video share with any name you like and with the path set to *c:\myvideos*.
+  NOTE: This program watches for video files from the top level folder down, so you can have a hierarchical folder structure if you wish, just make sure pyTivo has a share defined that points to the top level folder.
+
+==AUTO PUSH SETUP==
+  * If your pyTivo server is not already running make sure to start it.
+  * Start auto push GUI if you have not done so already.
+  * You need to supply full path to your pyTivo installation *pyTivo.conf* file. You can double-click in the *pyTivo config file* field to bring up a file browser to help you locate that file.
+  * Once you enter a valid pyTivo.conf file you should see listed in the table all the video share names and paths you have defined in your pyTivo setup.
+  * This program uses Bonjour to automatically detect Tivos on your home network, so you should see your Tivos listed in the *Tivo* cyclic.
+  * Select one of the entries in the table, then select the Tivo you want to push files to and then enable the *Auto Push* boolean. You will notice the name of the Tivo you selected now will display in the AUTO PUSH column. That's it, now the program will automatically monitor that video share for video files and push them automatically to the chosen Tivo.
+  * Repeat above for any additional shares you wish to have this program monitor.
+  * Select *File->Save* when done.
+  NOTE: Your settings are saved to *config.ini* file located in same folder as auto_push.jar file.
+
+==PUSHED VIDEO FILE TRACKING==
+  * In order to prevent the same video file from being repeatedly pushed to your Tivo(s) this program creates *auto_push.txt* files at the top level video share folder with the names of video files that have been successfully pushed. Note that the paths to the file names are relative to the top level video share folder.
+  * If there are any video files that you do not want pushed to your Tivos you can manually add them to the tracking file *BEFORE* you start monitoring that share.
+===FOR EXAMPLE===
+  * Say you have a pyTivo share with the top level path define as *c:\myvideos*
+  * Say you have a file under that share that you do not want to push to your Tivo: *c:\myvideos\movies\adventure\IndianaJones.mpg*
+  * You would edit/create *c:\myvideos\auto_push.txt* file and add the following line:
+  *movies\adventure\IndianaJones.mpg*
+  (remember that path has to be relative to location of the auto_push.txt file)
