@@ -17,6 +17,8 @@
   * Select *File->Save* when done.
   NOTE: Your settings are saved to *config.ini* file located in same folder as auto_push.jar file.
 
+  * To disable monitoring of a share simply select the share then disable the *Auto Push* boolean. The AUTO PUSH column will be empty for any shares that are not being monitored.
+
 ==PUSHED VIDEO FILE TRACKING==
   * In order to prevent the same video file from being repeatedly pushed to your Tivo(s) this program creates *auto_push.txt* files at the top level video share folder with the names of video files that have been successfully pushed. Note that the paths to the file names are relative to the top level video share folder.
   * If there are any video files that you do not want pushed to your Tivos you can manually add them to the tracking file *BEFORE* you start monitoring that share.
