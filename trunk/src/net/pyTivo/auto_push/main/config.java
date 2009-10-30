@@ -451,6 +451,9 @@ public class config {
    
    private static String buildRelativeEntry(String path, String pushFile) {
       String entry;
+      if (OS.equals("windows")) {
+         path = path.replaceAll("/", "\\\\");
+      }
       if (path.length() > 0) {
          entry = path + File.separator + pushFile;
       } else {
