@@ -1,3 +1,4 @@
+#labels Featured
 ==AUTO PUSH SERVICE MODE==
 
 You have the ability to run auto push as a background non-graphical program. On Windows you do this by running this program as a service. For Linux and Mac platforms you simply run this program in non-gui mode as a background program.
