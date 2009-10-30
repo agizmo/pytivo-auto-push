@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.Hashtable;
@@ -377,30 +376,32 @@ public class config {
          if (watchList.get(i).containsKey("tivo")) {
             watchDir = watchList.get(i).get("path");
             fullTrackingFile = watchDir + File.separator + trackingFile;
-            try {
-               BufferedReader ifp = new BufferedReader(new FileReader(fullTrackingFile));
-               String line = null;
-               while (( line = ifp.readLine()) != null) {
-                  // Get rid of leading and trailing white space
-                  line = line.replaceFirst("^\\s*(.*$)", "$1");
-                  line = line.replaceFirst("^(.*)\\s*$", "$1");
-                  if (line.length() == 0) continue; // skip empty lines
-                  if (line.matches("^#.+")) continue; // skip comment lines
-                  String[] l = line.split("\\s+");
-                  String entry;
-                  if (l.length > 1) {
-                     entry = watchDir + File.separator + l[0];
-                     pushed.put(entry, l[1]);
+            if (file.isFile(fullTrackingFile)) {
+               try {
+                  BufferedReader ifp = new BufferedReader(new FileReader(fullTrackingFile));
+                  String line = null;
+                  while (( line = ifp.readLine()) != null) {
+                     // Get rid of leading and trailing white space
+                     line = line.replaceFirst("^\\s*(.*$)", "$1");
+                     line = line.replaceFirst("^(.*)\\s*$", "$1");
+                     if (line.length() == 0) continue; // skip empty lines
+                     if (line.matches("^#.+")) continue; // skip comment lines
+                     String[] l = line.split("\\s+");
+                     String entry;
+                     if (l.length > 1) {
+                        entry = watchDir + File.separator + l[0];
+                        pushed.put(entry, l[1]);
+                     }
+                     else if (l.length > 0) {
+                        entry = watchDir + File.separator + l[0];
+                        pushed.put(entry, "pushed");
+                     }
                   }
-                  else if (l.length > 0) {
-                     entry = watchDir + File.separator + l[0];
-                     pushed.put(entry, "pushed");
-                  }
+                  ifp.close();
                }
-               ifp.close();
-            }
-            catch (IOException ex) {
-               log.print("NOTE: tracking file not found: " + fullTrackingFile);
+               catch (Exception ex) {
+                  log.error(ex.toString());
+               }
             }
          }
       }
