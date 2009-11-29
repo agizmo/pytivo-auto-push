@@ -15,7 +15,7 @@ title : title1
 
 NOTE: The *title* of the first file that is pushed will control the folder name, so in above example folder name would become *title1*, and subsequent videos in same folder would group under the same *title1* folder.
 
-FULL EXAMPLE:
+=FULL EXAMPLE=
 1. Under a folder I have a default.txt file with:
 seriesId : folder1
 
