@@ -17,7 +17,9 @@ NOTE: The *title* of the first file that is pushed will control the folder name,
 
 =FULL EXAMPLE=
 1. Under a folder I have a default.txt file with:
-seriesId : folder1
+{{{
+seriesId : Kids_Movies_folder
+}}}
 
 2. Under same folder I have movie1.mpg with movie1.mpg.txt:
 {{{
