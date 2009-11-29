@@ -9,11 +9,11 @@ seriesId : some_unique_folder_name
 3. For each video in that folder, make an accompanying metadata file: 
 For example, for the video video1.mpg, there would be a metadata file named video1.mpg.txt with the title name you want to have on TiVo:
 
-title : This is video 1
+title : title1
 
 (You can also add other tags such as *description* for example if you wish).
 
-NOTE: The *title* of the first file that is pushed will control the folder name, so in above example folder name would become video1, and subsequent videos in same folder would group under the same video1 folder.
+NOTE: The *title* of the first file that is pushed will control the folder name, so in above example folder name would become *title1*, and subsequent videos in same folder would group under the same *title1* folder.
 
 FULL EXAMPLE:
 1. Under a folder I have a default.txt file with:
