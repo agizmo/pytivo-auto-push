@@ -1,3 +1,4 @@
+#labels Featured
 A simple way to group a bunch of titles together on TiVo Now Playing List with pyTivo pushes:
 
 1. Put all videos you want grouped together on TiVo in a single folder.
