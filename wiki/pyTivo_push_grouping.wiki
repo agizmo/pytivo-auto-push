@@ -13,7 +13,7 @@ title : This is video 1
 
 (You can also add other tags such as *description* for example if you wish).
 
-NOTE: The first file that is pushed will control the folder name, so in above example folder name would become video1, and subsequent videos in same folder would group under the same video1 folder.
+NOTE: The *title* of the first file that is pushed will control the folder name, so in above example folder name would become video1, and subsequent videos in same folder would group under the same video1 folder.
 
 FULL EXAMPLE:
 1. Under a folder I have a default.txt file with:
