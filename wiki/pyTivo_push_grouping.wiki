@@ -4,12 +4,15 @@ A simple way to group a bunch of titles together on TiVo Now Playing List with p
 1. Put all videos you want grouped together on TiVo in a single folder.
 
 2. In that folder put a file named default.txt with a unique seriesId tag (doesn't matter what it is, just don't repeat it for other folder groupings):
+{{{
 seriesId : some_unique_folder_name
+}}}
 
 3. For each video in that folder, make an accompanying metadata file: 
 For example, for the video video1.mpg, there would be a metadata file named video1.mpg.txt with the title name you want to have on TiVo:
-
+{{{
 title : title1
+}}}
 
 (You can also add other tags such as *description* for example if you wish).
 
