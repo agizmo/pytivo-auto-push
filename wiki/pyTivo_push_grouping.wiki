@@ -33,6 +33,8 @@ title : Kid Movie 2
 description : This is Kid Movie 2
 }}}
 
+5. Now I push movie2.mp4
+
 Result on TiVo:
 {{{
 Kids Movies (2)
