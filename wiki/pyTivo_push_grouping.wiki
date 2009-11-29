@@ -30,6 +30,9 @@ title : Kid Movie 2
 description : This is Kid Movie 2
 
 Result on TiVo:
+
 Kids Movies (2)
+
    Kid Movie 2
+
    Kids Movies
