@@ -46,3 +46,11 @@ Kids Movies (2)
    Kid Movie 2 (description=This is Kid Movie 2)
    Kids Movies (description=This is Kid Movie 1)
 }}}
+
+==METADATA TAGS SUPPORTED FOR PUSHES==
+{{{
+seriesId (not used in same way as pulls but useful for grouping purposes)
+title/seriesTitle
+episodeTitle
+description
+}}}
