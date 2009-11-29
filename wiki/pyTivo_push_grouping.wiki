@@ -33,6 +33,6 @@ Result on TiVo:
 
 Kids Movies (2)
 
-   Kid Movie 2
+   Kid Movie 2 (description=This is Kid Movie 2)
 
-   Kids Movies
+   Kids Movies (description=This is Kid Movie 1)
