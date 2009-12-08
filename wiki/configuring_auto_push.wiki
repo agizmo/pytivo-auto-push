@@ -11,7 +11,8 @@
   * If your pyTivo server is not already running make sure to start it.
   * Start auto push GUI if you have not done so already.
   * You need to supply full path to your pyTivo installation *pyTivo.conf* file. You can double-click in the *pyTivo config file* field to bring up a file browser to help you locate that file.
-  * Once you enter a valid pyTivo.conf file you should see listed in the table all the video share names and paths you have defined in your pyTivo setup.
+  * Be sure to press *Return* in the pyTivo.conf field once you have entered it (even if you used the browser this is still necessary).
+  * Once you enter a valid pyTivo.conf file and press *Return* in the field, you should see listed in the table all the video share names and paths you have defined in your pyTivo setup.
   * This program uses Bonjour to automatically detect Tivos on your home network, so you should see your Tivos listed in the *Tivo* cyclic.
   * Select one of the entries in the table, then select the Tivo you want to push files to and then enable the *Auto Push* boolean. You will notice the name of the Tivo you selected now will display in the AUTO PUSH column. That's it, now the program will automatically monitor that video share for video files and push them automatically to the chosen Tivo.
   * Repeat above for any additional shares you wish to have this program monitor.
