@@ -7,6 +7,8 @@
   * For example, say that you want this program to automatically push video files that are dropped into a folder called *c:\myvideos*. In pyTivo setup you should define a video share with any name you like and with the path set to *c:\myvideos*.
   NOTE: This program watches for video files from the top level folder down, so you can have a hierarchical folder structure if you wish, just make sure pyTivo has a share defined that points to the top level folder.
 
+  * In order for pyTivo to be able to do "pushes" it needs your tivo.com login & password information. You can use http://localhost:9032 in your browser to get to pyTivo *Web Configuration*. Under *Global Server Settings* you have to set *tivo_username* and *tivo_password* according to your tivo.com login & password.
+
 ==AUTO PUSH SETUP==
   * If your pyTivo server is not already running make sure to start it.
   * Start auto push GUI if you have not done so already.
