@@ -9,6 +9,7 @@
 
   * In order for pyTivo to be able to do "pushes" it needs your tivo.com login & password information. With pyTivo running you can use http://localhost:9032 in your browser to get to pyTivo *Web Configuration*. Under *Global Server Settings* you have to set *tivo_username* and *tivo_password* according to your tivo.com login & password. If you don't see entries there then just edit pyTivo.conf with a text editor and under [Server] section put 2 entries:
    {{{tivo_username = ...}}}
+
    {{{tivo_password = ...}}}
 
 ==AUTO PUSH SETUP==
