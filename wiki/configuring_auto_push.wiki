@@ -13,6 +13,15 @@
    tivo_password = ...
    }}}
 
+==TEST PYTIVO PUSH SETUP==
+Once you have pyTivo setup as detailed above you should test your setup within pyTivo, which you can do as follows:
+  * Make sure pyTivo is running
+  * With a browser connect to pyTivo web server: http://localhost:9032
+  * Under *Push from video shares:* text click on one of your video shares
+  * Locate and put a check mark by 1 of the videos in the share
+  * By *Send to TiVo* button select a TiVo you would like to push the video to and then click on the button
+  * Wait a little while and confirm that the video successfully pushes to the chosen TiVo.
+
 ==AUTO PUSH SETUP==
   * If your pyTivo server is not already running make sure to start it.
   * Start auto push GUI if you have not done so already.
