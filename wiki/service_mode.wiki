@@ -14,7 +14,7 @@ You can install, start, stop and remove auto_push service directly from the auto
   * Use *Service->Stop* to stop the auto_push service
   * Use *Service->Remove* to remove the auto_push service
 
-Alternatively there is another way to control auto_push service. Browse to the folder where you installed auto push and then go to *service\win32* folder. Here there are scripts to install, start, stop or uninstall the auto push service. For Windows XP simply double-click on the appropriate script to run it. *For Vista these must be run as Administrator in order to work, so you should right click and select "Run as administrator" to run them.*
+Alternatively there is another way to control auto_push service. Browse to the folder where you installed auto push and then go to *service\win32* folder. Here there are scripts to install, start, stop or uninstall the auto push service. For Windows XP simply double-click on the appropriate script to run it. *For Vista these may have to be run as Administrator in order to work, so you should right click and select "Run as administrator" to run them.*
 
   * *install-service.bat* Installs auto_push as a service
   * *start-service.bat* Will start an already installed auto_push service
