@@ -368,7 +368,7 @@ public class config {
    }
    
    // Parse all active share tracking files and store info in "pushed" hash
-   private static void parseTrackingFiles() {
+   public static void parseTrackingFiles() {
       String fullTrackingFile;
       String watchDir;
       pushed.clear();
