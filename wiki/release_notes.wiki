@@ -1,11 +1,11 @@
 #labels Featured
 =RELEASE NOTES=
 
-==v0.1a (10/29/2009)==
-
-*Initial release*
-
 ==v0.1b (02/14/2010)==
 
 *FIXES*
    * Updated pyTivo push call to work properly with change in pyTivo response to external push calls in recent releases. Prior to this fix auto_push would always get 404 (Not Found) response from pyTivo server for push requests and so auto_push would assume the push requests failed even though they would go through anyway.
+
+==v0.1a (10/29/2009)==
+
+*Initial release*
