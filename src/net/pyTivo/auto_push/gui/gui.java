@@ -547,6 +547,7 @@ public class gui {
       } else {
          if (tivoName.length() > 0) {
             h.put("tivo", tivoName);
+            config.parseTrackingFiles();
          } else {
             if (h.containsKey("tivo"))
                h.remove("tivo");
