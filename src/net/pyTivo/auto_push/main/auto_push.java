@@ -89,6 +89,7 @@ public class auto_push {
             URL url = new URL(urlString);
             log.print(url.toString());
             HttpURLConnection c = (HttpURLConnection) url.openConnection();
+            c.addRequestProperty("REFERER", "/");
             c.setRequestMethod("GET");
             c.setReadTimeout(config.timeout_http*1000);
             c.connect();
