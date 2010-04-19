@@ -1,6 +1,11 @@
 #labels Featured
 =RELEASE NOTES=
 
+=v0.1c (04/19/2010)==
+
+*FIXES*
+   * List of already pushed titles is rebuilt every time auto push checks for files to push now. There was a bug in previous release where when first starting auto push that already pushed files were being pushed.
+
 ==v0.1b (02/14/2010)==
 
 *FIXES*
