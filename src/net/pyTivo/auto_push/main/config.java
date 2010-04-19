@@ -432,6 +432,7 @@ public class config {
    }
    
    public static Boolean alreadyPushed(String watchDir, String path, String pushFile) {
+      parseTrackingFiles();
       String entry = buildRelativeEntry(path, pushFile);
       String track = watchDir + File.separator + entry;
       if (pushed.containsKey(track)) {
