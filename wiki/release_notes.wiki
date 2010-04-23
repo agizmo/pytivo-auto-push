@@ -1,7 +1,12 @@
 #labels Featured
 =RELEASE NOTES=
 
-=v0.1c (04/19/2010)==
+==v0.1d (04/23/2010)==
+
+*FIXES*
+   * Fixed parsing problem for files with spaces when building list of already pushed files from .processed files.
+
+==v0.1c (04/19/2010)==
 
 *FIXES*
    * List of already pushed titles is rebuilt every time auto push checks for files to push now. There was a bug in previous release where when first starting auto push that already pushed files were being pushed.
