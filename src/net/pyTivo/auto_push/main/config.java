@@ -313,7 +313,7 @@ public class config {
    }
   
    // Read pyTivoConf and update watchList with any new/changed shares
-   public static void pyTivoConfUpdate() {      
+   public static void pyTivoConfUpdate() {   
       // Check against shares in pyTivoConf if available
       if (file.isFile(pyTivoConf)) {
          Stack<Hashtable<String,String>> shares = getPyTivoShares(pyTivoConf);
@@ -386,16 +386,8 @@ public class config {
                      line = line.replaceFirst("^(.*)\\s*$", "$1");
                      if (line.length() == 0) continue; // skip empty lines
                      if (line.matches("^#.+")) continue; // skip comment lines
-                     String[] l = line.split("\\s+");
-                     String entry;
-                     if (l.length > 1) {
-                        entry = watchDir + File.separator + l[0];
-                        pushed.put(entry, l[1]);
-                     }
-                     else if (l.length > 0) {
-                        entry = watchDir + File.separator + l[0];
-                        pushed.put(entry, "pushed");
-                     }
+                     String entry = watchDir + File.separator + line;
+                     pushed.put(entry, "pushed");
                   }
                   ifp.close();
                }
@@ -415,7 +407,7 @@ public class config {
       }
       String fullTrackingFile = watchDir + File.separator + trackingFile;
       String entry = buildRelativeEntry(path, pushFile);
-      String eol = "\r";
+      String eol = "\r\n";
       try {
          BufferedWriter ofp = new BufferedWriter(new FileWriter(fullTrackingFile, true));
          ofp.write(entry + eol);
@@ -432,7 +424,6 @@ public class config {
    }
    
    public static Boolean alreadyPushed(String watchDir, String path, String pushFile) {
-      parseTrackingFiles();
       String entry = buildRelativeEntry(path, pushFile);
       String track = watchDir + File.separator + entry;
       if (pushed.containsKey(track)) {
