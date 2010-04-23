@@ -4,7 +4,7 @@
 ==v0.1d (04/23/2010)==
 
 *FIXES*
-   * Fixed parsing problem for files with spaces when building list of already pushed files from .processed files.
+   * Fixed parsing problem for files with spaces when building list of already pushed files from .processed files. This problem would cause auto_push to try and push files that already had been pushed previously when re-starting auto_push.
 
 ==v0.1c (04/19/2010)==
 
