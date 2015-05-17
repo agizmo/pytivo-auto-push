@@ -1,4 +1,6 @@
-# INTRODUCTION
+(See installation and usage documentation further below)
+
+# INTRODUCTION #
 
 This program works in conjunction with pyTivo server. You can setup 1 or more pyTivo video shares to be automatically monitored for new video files. New video files deposited anywhere under a pyTivo video share are automatically pushed to a networked TiVo of your choosing. This is designed to mimic similar functionality as Tivo Desktop Auto Transfers from PC to TiVo.
 
@@ -8,34 +10,33 @@ This program is known to run on Windows XP, Windows Vista, Mac OSX and Linux (va
 
 NOTE: Ideally auto transfers should be built into pyTivo itself without need for a separate programs such as this. My hope is some day the pyTivo developers will do just that.
 
-# SCREENSHOT
+# SCREENSHOT #
 
+![http://pytivo-auto-push.googlecode.com/files/auto_push_v0.1a.gif](http://pytivo-auto-push.googlecode.com/files/auto_push_v0.1a.gif)
 
+### [RELEASE NOTES](http://code.google.com/p/pytivo-auto-push/wiki/release_notes) ###
 
-<a href="release_notes.md">RELEASE NOTES</a>
+## [WINDOWS INSTALLATION INSTRUCTIONS](http://code.google.com/p/pytivo-auto-push/wiki/windows_installation) ##
 
-<a href="windows_installation.md">WINDOWS INSTALLATION INSTRUCTIONS</a>
+## [MACINTOSH INSTALLATION INSTRUCTIONS](http://code.google.com/p/pytivo-auto-push/wiki/mac_osx_installation) ##
 
-<a href="mac_osx_installation.md">MACINTOSH INSTALLATION INSTRUCTIONS</a>
+## [LINUX INSTALLATION INSTRUCTIONS](http://code.google.com/p/pytivo-auto-push/wiki/linux_installation) ##
 
-<a href="linux_installation.md">LINUX INSTALLATION INSTRUCTIONS</a>
+## [CONFIGURING AUTO PUSH](http://code.google.com/p/pytivo-auto-push/wiki/configuring_auto_push) ##
 
-<a href="configuring_auto_push.md">CONFIGURING AUTO PUSH</a>
+## [SERVICE MODE](http://code.google.com/p/pytivo-auto-push/wiki/service_mode) ##
 
-<a href="service_mode.md">SERVICE MODE</a>
+# PYTIVO LINKS #
+[pyTivo home](http://pytivo.sourceforge.net/wiki/index.php/PyTivo)
 
-# PYTIVO LINKS
+[pyTivo forums](http://pytivo.sourceforge.net/forum/)
 
-<a href="http://pytivo.sourceforge.net/wiki/index.php/PyTivo">pyTivo home</a>
+[pyTivo windows installer](http://pytivo.sourceforge.net/forum/updated-windows-installer-2009-03-21-t512.html#3957)
 
-<a href="http://pytivo.sourceforge.net/forum/">pyTivo forums</a>
+[latest wmcbrine builds](http://repo.or.cz/w/pyTivo/wmcbrine.git)
 
-<a href="http://pytivo.sourceforge.net/forum/updated-windows-installer-2009-03-21-t512.html#3957">pyTivo windows installer</a>
+[Windows ffmpeg builds](http://pytivo.sourceforge.net/forum/rdian06-s-ffmpeg-builds-t468.html#3557)
 
-<a href="http://repo.or.cz/w/pyTivo/wmcbrine.git">latest wmcbrine builds</a>
+# TIVO FORUMS THREAD #
 
-<a href="http://pytivo.sourceforge.net/forum/rdian06-s-ffmpeg-builds-t468.html#3557">Windows ffmpeg builds</a>
-
-# TIVO FORUMS THREAD
-
-http://www.tivocommunity.com/tivo-vb/showthread.php?t=435477 
+http://www.tivocommunity.com/tivo-vb/showthread.php?t=435477
